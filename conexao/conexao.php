@@ -1,5 +1,10 @@
 <?php
 
+//$servername = "108.181.92.73";
+//$username = "admin-kits";
+//$password = "Senha!@#33";
+//$dbname = "projetokits";
+
 $servername = "localhost";
 $username = "root";
 $password = "";
