@@ -9,7 +9,8 @@
 <body>    
     <header>
         <h1>Projeto Kits</h1>
-        <?php include "includes/menu.php" ?>        
-    </header>   
+        <?php include "includes/menu.php" ?>
+    </header>
+        <?php include "includes/footer.php" ?>
 </body>
 </html>
