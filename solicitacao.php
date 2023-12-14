@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Solicitação de kit -senac</title>
-    <link rel="stylesheet" href="css/design.css">
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
 
     <header>
-        <h1>Solicitação de kit</h1>
+        <h1>Solicitação de kits</h1>
     </header>
 
     <section>

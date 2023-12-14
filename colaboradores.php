@@ -5,7 +5,7 @@
 
 <head>
   <title>Minha Página</title>
-  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
 
