@@ -8,7 +8,7 @@
 <body>
 
     <header>
-        <h1>Solicitação de kit</h1>
+        <h1>Solicitação de kits</h1>
     </header>
 
     <section>
