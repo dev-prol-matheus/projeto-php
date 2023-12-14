@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Projeto Kits</title>
+    <link rel="stylesheet" href="css/estilo-menu.css">
 </head>
 <body>
     
+    <header>
+        <h1>Projeto Kits</h1>
+        <?php include "includes/menu.php" ?>
+        
+    </header>   
 </body>
 </html>
