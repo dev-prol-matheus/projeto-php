@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Solicitação de kit -senac</title>
-    <link rel="stylesheet" href="css/design.css">
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
 
