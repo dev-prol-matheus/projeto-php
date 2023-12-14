@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <html>
-  
-
-
 <head>
   <title>Minha Página</title>
   <link rel="stylesheet" href="css/estilo.css">
@@ -33,11 +30,5 @@
       </form>
     </div>
   </section>
-  
-
-  <?php include "includes/footer.php" ?>
- 
-  
-
 </body>
 </html>

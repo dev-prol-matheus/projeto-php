@@ -9,6 +9,7 @@
 
     <header>
         <h1>Solicitação de kits</h1>
+        <?php include "includes/menu.php"; ?>
     </header>
 
     <section>
