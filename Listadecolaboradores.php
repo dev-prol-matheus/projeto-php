@@ -11,7 +11,7 @@
 
 
   <header>
-    <h1>Meus Clientes</h1>
+    <h1>Colaboradores</h1>
     <?php include "includes/menu.php"  ?>
 
   </header>
