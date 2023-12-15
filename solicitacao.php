@@ -40,5 +40,9 @@
             <input type="submit" value="Solicitar">
         </form>
         </div>
+    </section>
+    
+    <?php include "includes/footer.php" ?>
+    
 </body>
 </html>
