@@ -37,8 +37,12 @@
             <option value="valor3">Sala 6</option>
             </select>
             <br><br>
-            <input type="submit" value="Solicitar">
+            <input class="btmPadrao" type="submit" value="Solicitar">
         </form>
         </div>
+    </section>
+    
+    <?php include "includes/footer.php" ?>
+    
 </body>
 </html>

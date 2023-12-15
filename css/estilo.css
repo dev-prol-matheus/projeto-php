@@ -8,11 +8,11 @@ body {
   }
   
   header {
-    background-color:rgb(8, 8, 118);
-    color:#ffdb58;
+    background-color:#004A8D;
+    color:#f7f5f0;
     text-align: center;
     padding: 10px 0;
-    border-bottom:4px solid #ffdb58;
+    border-bottom:4px solid #F7941D;
   }
   
   nav ul {
@@ -25,9 +25,12 @@ body {
     }
     
     nav ul li a {
-      color: #ffdb58;
+      color: #f7f5f0;
       text-decoration: none;
-      border-bottom:4px solid #f7f5f0;
+    }
+
+    nav ul li a:hover {
+      color: #F7941D;
     }
 
     section {
@@ -40,8 +43,8 @@ body {
         position: fixed;
         bottom: 0;
         width: 100%;
-        background-color: rgb(8, 8, 118);
-        color: #ffdb58;
+        background-color: #004A8D;
+        color: #F7941D;
       }
     
       .container {
@@ -54,28 +57,45 @@ body {
       .form {
         width: 300px;
         padding: 20px;
-        border: 1px solid rgb(8, 8, 118);
+        border: 1px solid #5389bb;
         border-radius: 5px;
         background-color: #f9f9f9;
       }
+
+      .btmPadrao {
+        background-color: #004A8D;
+        color: #f7f5f0;
+        border: none;
+        padding: 7px 14px;
+        border-radius: 20px;
+        transition:
+      }
+
+      .btmPadrao:hover{
+        background-color:#013361;
+        transform: scale(1.03);
+      }
+  
+      
 
 
        /* Estilos para as células */
     table {
       border-collapse: collapse;
       width: 100%;
-  }
+      }
 
-  td, th {
-      border: 1px solid #ddd;
-      padding: 8px;
-      text-align: left;
-  }
+      td, th {
+          border: 1px solid #ddd;
+          padding: 8px;
+          text-align: left;
+      }
 
-  /* Estilo alternado para as linhas */
-  tr:nth-child(even) {
-      background-color: #f2f2f2; /* Cor de fundo para linhas pares */
-  }
+      /* Estilo alternado para as linhas */
+      tr:nth-child(even) {
+          background-color: #f2f2f2; /* Cor de fundo para linhas pares */
+      }
 
   
   
+

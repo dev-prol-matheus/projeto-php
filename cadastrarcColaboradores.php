@@ -31,12 +31,16 @@
             <option value="manutenção">tecnico de informatica</option>
             </select><br><br>
 
-        <input type="submit" value="Cadastrar">
+        <input class="btmPadrao" type="submit" value="Cadastrar">
       </form>
     </div>
   </section>
 
+
   
   <script src="/js/script.js"></script>
+
+        <?php include "includes/footer.php"; ?> 
+
 </body>
 </html>

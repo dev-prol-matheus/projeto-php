@@ -11,7 +11,7 @@ $usuario = $stmt->fetch(PDO::FETCH_ASSOC);
 $verificaSenha = password_verify($senha, $usuario['senha']);
 
 if ($verificaSenha){
-    header('location: ../'); // dependendo do arquivo de "solicitação de kits"
+    header('location: ../solicitacao.php');
     session_start();
     $_SESSION['usuario_login'] = $login; 
 }else{
