@@ -79,3 +79,17 @@
     color: red;
   }
   
+  input[type="password"] {
+    width: calc(100% - 12px);
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Estilizando quando o campo está em foco */
+  input[type="password"]:focus {
+    outline: none;
+    border-color: #7c93cf; /* Cor da borda quando o campo está em foco */
+    box-shadow: 0 0 5px rgba(124, 147, 207, 0.5); /* Sombra quando em foco */
+  }

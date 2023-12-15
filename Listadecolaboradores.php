@@ -11,7 +11,7 @@
 
 
   <header>
-    <h1>Meus Clientes</h1>
+    <h1>Meus Colaboradores</h1>
     <?php include "includes/menu.php"  ?>
 
   </header>
@@ -57,7 +57,7 @@
     </table>
   </div>
   </section>
-
+  <?php include "includes/footer.php"; ?> 
   
   
 

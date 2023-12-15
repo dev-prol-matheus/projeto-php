@@ -1,0 +1,42 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Roboto', sans-serif; /* Roboto como fonte principal */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilo do Cabeçalho */
+  header {
+    background-color: #0B3D91; /* Azul */
+    color: #fff; /* Branco */
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+  }
+  
+  /* Estilo da Barra de Navegação */
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #0B3D91; /* Azul */
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff; /* Branco */
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    background-color: #1356C0; /* Azul mais claro ao passar o mouse */
+  }
+  

@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 15/12/2023 às 00:48
--- Versão do servidor: 10.4.28-MariaDB
--- Versão do PHP: 8.1.17
+-- Tempo de geração: 15/12/2023 às 22:54
+-- Versão do servidor: 10.4.32-MariaDB
+-- Versão do PHP: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -40,37 +40,19 @@ CREATE TABLE `colaboradores` (
 --
 
 INSERT INTO `colaboradores` (`id`, `nome`, `telefone`, `cpf`, `cargo`) VALUES
-(1, 'MATHEUS', '8199999-9999', '12332112332', 'PROFESSOR'),
-(2, 'ANA', '8199999-9999', '78998778998', 'PROFESSOR'),
-(3, 'MARIA', '8199999-9999', '45665445665', 'PROFESSOR');
+(1, 'carlos', '453456453', '20052005', 'professor');
 
 -- --------------------------------------------------------
 
 --
 -- Estrutura para tabela `kits`
--- 
+--
 
 CREATE TABLE `kits` (
   `id` int(5) NOT NULL,
   `descricao` varchar(40) NOT NULL,
   `sala` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Despejando dados para a tabela `kits`
---
-
-INSERT INTO `kits` (`id`, `descricao`, `sala`) VALUES
-(3, 'KIT SALA 01', '01'),
-(4, 'KIT SALA 02', '02'),
-(5, 'KIT SALA 03', '03'),
-(6, 'KIT SALA 04', '04'),
-(7, 'KIT SALA 05', '05'),
-(8, 'KIT SALA 06', '06'),
-(9, 'KIT SALA 07', '07'),
-(10, 'KIT SALA 08', '08'),
-(11, 'KIT SALA 09', '09'),
-(12, 'KIT SALA 10', '10');
 
 -- --------------------------------------------------------
 
@@ -85,6 +67,18 @@ CREATE TABLE `solicitacoes_kits` (
   `id_colaborador` int(5) NOT NULL,
   `data_hora_entrega` date NOT NULL,
   `baixa` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura para tabela `usuario`
+--
+
+CREATE TABLE `usuario` (
+  `id` int(55) NOT NULL,
+  `login` varchar(55) NOT NULL,
+  `senha` varchar(55) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -110,6 +104,12 @@ ALTER TABLE `solicitacoes_kits`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Índices de tabela `usuario`
+--
+ALTER TABLE `usuario`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT para tabelas despejadas
 --
 
@@ -117,19 +117,25 @@ ALTER TABLE `solicitacoes_kits`
 -- AUTO_INCREMENT de tabela `colaboradores`
 --
 ALTER TABLE `colaboradores`
-  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de tabela `kits`
 --
 ALTER TABLE `kits`
-  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de tabela `solicitacoes_kits`
 --
 ALTER TABLE `solicitacoes_kits`
   MODIFY `id` int(5) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de tabela `usuario`
+--
+ALTER TABLE `usuario`
+  MODIFY `id` int(55) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

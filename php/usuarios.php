@@ -7,14 +7,14 @@ try {
 
     $senhaCripto = password_hash($senha, PASSWORD_DEFAULT);
       
-    $sql = "INSERT INTO usuarios (login, senha) VALUES (:login, :senha)";
+    $sql = "INSERT INTO usuario (login, senha) VALUES (:login, :senha)";
     $stmt = $conn->prepare($sql);
     $stmt->bindParam(':login', $login);
     $stmt->bindParam(':senha', $senhaCripto);
     
     $stmt->execute();
 
-    header("Location: ../"); // dependendo do arquivo "listar kits em uso"
+    header("Location: ../cadastrarUsuarios.php"); // dependendo do arquivo "listar kits em uso"
     exit();
 
 } catch(PDOException $e) {
