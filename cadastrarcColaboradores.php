@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Minha Página</title>
+  <link rel="stylesheet" href="css/estilo.css">
   <link rel="stylesheet" href="css/estilo-cadrastocolaboradores.css">
 </head>
 <body>

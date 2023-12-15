@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Solicitação de kit -senac</title>
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/estilo-cadrastocolaboradores.css">
 </head>
 <body>
 

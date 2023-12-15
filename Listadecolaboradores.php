@@ -53,8 +53,9 @@
           }
         ?>         
       </tbody>
-    </div>
+    
     </table>
+  </div>
   </section>
 
   

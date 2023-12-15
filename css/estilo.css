@@ -63,17 +63,16 @@ body {
       }
 
       .btmPadrao {
-        background-color: #004A8D;
-        color: #f7f5f0;
-        border: none;
-        padding: 7px 14px;
-        border-radius: 20px;
-        transition:
+        background-color: #004A8D !important;
+        color: #f7f5f0 !important;
+        border: none !important;
+        padding: 7px 14px !important;
+        border-radius: 20px !important;
       }
 
       .btmPadrao:hover{
-        background-color:#013361;
-        transform: scale(1.03);
+        background-color:#013361 !important;
+        transform: scale(1.03) !important;
       }
   
       
