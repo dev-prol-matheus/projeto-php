@@ -7,7 +7,7 @@
 
 $servername = "localhost";
 $username = "root";
-$password = "103507";
+$password = "";
 $dbname = "projetokits";
 
 try {
