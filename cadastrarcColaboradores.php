@@ -26,7 +26,7 @@
         <label for="cargo">Cargo:</label><br>
         <input type="text" id="cargo" name="cargo"><br><br>
 
-        <input type="submit" value="Cadastrar">
+        <input class="btmPadrao" type="submit" value="Cadastrar">
       </form>
     </div>
   </section>
