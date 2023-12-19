@@ -8,7 +8,13 @@
 </head>
 <body>
 
-
+<?php
+  session_start();
+  if (!isset($_SESSION['usuario_login'])) {
+    header("Location: index.php");
+    exit();
+  }
+  ?>
 
   <header>
 

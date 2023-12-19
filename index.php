@@ -9,18 +9,22 @@
 <body>
 
     <header>
-        <h1>Solicitação de kits</h1>
+        <h1>Tela de Login</h1>
        
     </header>
 
     <section>
-        <div class="container">
-        <form id="LoginForm" class="form">
-            <input type="text" id="username" placeholder="Usuário" required><br><br>
-            <input type="password" id="password" placeholder="Senha" required><br><br>
-            <button type="submit">Entrar</button>
-        
-        </div>
+    <div class="container">
+      <form action="php/login.php" method="post" class="form">
+        <label for="nome">Login:</label><br>
+        <input type="text" id="login" name="login"><br><br>
+
+        <label for="password">Senha:</label><br>
+        <input type="password" id="senha" name="senha"><br><br>
+
+        <input type="submit" value="entrar">
+      </form>
+    </div>
         <?php include "includes/footer.php"; ?>
 </body>
 </html>
