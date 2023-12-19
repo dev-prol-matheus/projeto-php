@@ -44,7 +44,8 @@ body {
         bottom: 0;
         width: 100%;
         background-color: #004A8D;
-        color: #F7941D;
+        color: #f7f5f0;
+        border-top:4px solid #F7941D;
       }
     
       .container {

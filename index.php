@@ -6,11 +6,21 @@
     <title>Sistema de Kits - Senac</title>
     <link rel="stylesheet" href="css/estilo.css">
 </head>
-<body>    
+<body>
+
     <header>
-        <h1>Projeto Kits</h1>
-        <?php include "includes/menu.php" ?>
+        <h1>Solicitação de kits</h1>
+       
     </header>
-        <?php include "includes/footer.php" ?>
+
+    <section>
+        <div class="container">
+        <form id="LoginForm" class="form">
+            <input type="text" id="username" placeholder="Usuário" required><br><br>
+            <input type="password" id="password" placeholder="Senha" required><br><br>
+            <button type="submit">Entrar</button>
+        
+        </div>
+        <?php include "includes/footer.php"; ?>
 </body>
 </html>
