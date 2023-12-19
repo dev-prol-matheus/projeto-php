@@ -14,7 +14,7 @@ try {
     
     $stmt->execute();
 
-    header("Location: ../"); // dependendo do arquivo "listar kits em uso"
+    header("Location: ../emUso.php");
     exit();
 
 } catch(PDOException $e) {
