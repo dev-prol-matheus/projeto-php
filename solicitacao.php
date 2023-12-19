@@ -46,7 +46,7 @@
             include "conexao/conexao.php";
 
             try {
-                $stmt = conn->query("SELECT * FROM kits");
+                $stmt = $conn->query("SELECT * FROM kits");
                 $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
                   foreach ($results as $option) {

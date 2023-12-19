@@ -5,15 +5,17 @@ $senha = $_POST['senha'];
 
 include "../conexao/conexao.php";
    
-$stmt = $conn->query("SELECT * FROM usuarios WHERE login='$login'");
+$stmt = $conn->query("SELECT * FROM usuario WHERE login='$login'");
+
 $usuario = $stmt->fetch(PDO::FETCH_ASSOC);
 
 $verificaSenha = password_verify($senha, $usuario['senha']);
 
-if ($verificaSenha){
-    header('location: ../solicitacao.php');
+
+if ($verificaSenha){    
     session_start();
     $_SESSION['usuario_login'] = $login; 
+    header('location: ../cadastrarUsuarios.php');
 }else{
     echo "<script>
     alert('Senha incorreta. Por favor, tente novamente.');
