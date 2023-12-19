@@ -14,7 +14,9 @@ try {
     
     $stmt->execute();
 
+
     header("Location: ../cadastrarUsuarios.php"); // dependendo do arquivo "listar kits em uso"
+
     exit();
 
 } catch(PDOException $e) {
