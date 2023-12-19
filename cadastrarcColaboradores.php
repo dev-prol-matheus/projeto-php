@@ -8,7 +8,7 @@
 <body>
 
   <header>
-    <h1>Cadastro Colaboradores</h1>
+    <h1>Cadastrar Colaboradores</h1>
     <?php include "includes/menu.php"  ?>
 
   </header>
@@ -36,12 +36,7 @@
       </form>
     </div>
   </section>
-
-
-  
-  <script src="/js/script.js"></script>
-
-        <?php include "includes/footer.php"; ?> 
-
+  <?php include "includes/footer.php"; ?> 
 </body>
+
 </html>
