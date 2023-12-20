@@ -9,6 +9,9 @@
 <body>
 
   <header>
+  <div class: Logo-Projeto>
+            <img src="Logo_projetoPHP-12.png">
+     </div>
     <h1>Cadastrar de usuarios</h1>
     <?php include "includes/menu.php"  ?>
 

@@ -17,7 +17,7 @@
 
   </header>
   <section>
-    <div class="container">
+    <div class="container2">
       <form action="php/cadastrar-colaboradores.php" method="post" class="form">
         <label for="nome">Nome:</label><br>
         <input type="text" id="nome" name="nome"><br><br>
