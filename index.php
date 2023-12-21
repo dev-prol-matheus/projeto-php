@@ -9,22 +9,21 @@
 <body>
 
     <header>
-        <h1>Tela de Login</h1>
-       
+        <div class: Logo-Projeto>
+            <img src="Logo_projetoPHP-12.png">
+        </div>
+        <h1>Solicitação de kits</h1>       
     </header>
 
+
     <section>
-    <div class="container">
-      <form action="php/login.php" method="post" class="form">
-        <label for="nome">Login:</label><br>
-        <input type="text" id="login" name="login"><br><br>
-
-        <label for="password">Senha:</label><br>
-        <input type="password" id="senha" name="senha"><br><br>
-
-        <input type="submit" value="entrar">
-      </form>
-    </div>
-        <?php include "includes/footer.php"; ?>
+        <div class="container">
+        <form action="php/login.php" method="post" id="LoginForm" class="form">
+            <input type="text" id="login" placeholder="login" required><br><br>
+            <input type="password" id="senha" placeholder="senha" required><br><br>
+            <button type="submit">Entrar</button>        
+        </div>
+    </section>
+    <?php include "includes/footer.php"; ?> 
 </body>
 </html>

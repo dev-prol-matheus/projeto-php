@@ -9,6 +9,9 @@
 <body>
 
     <header>
+    <div class: Logo-Projeto>
+            <img src="Logo_projetoPHP-12.png">
+     </div>
         <h1>Solicitação de kits</h1>
         <?php include "includes/menu.php"; ?>
     </header>
@@ -62,9 +65,7 @@
             <input class="btmPadrao" type="submit" value="Solicitar">
         </form>
         </div>
-    </section>
-    
-    <?php include "includes/footer.php" ?>
-    
+    </section>    
+    <?php include "includes/footer.php"; ?>     
 </body>
 </html>

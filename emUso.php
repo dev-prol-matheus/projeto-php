@@ -13,6 +13,9 @@
 
 <body>
     <header>
+    <div class: Logo-Projeto>
+            <img src="Logo_projetoPHP-12.png">
+     </div>
         <?php include "includes/menu.php"?>
     </header>
 

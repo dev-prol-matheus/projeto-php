@@ -17,7 +17,9 @@
   ?>
 
   <header>
-
+  <div class: Logo-Projeto>
+            <img src="Logo_projetoPHP-12.png">
+     </div>
     <h1>Meus Colaboradores</h1>
 
     <?php include "includes/menu.php"  ?>
@@ -25,7 +27,7 @@
   </header>
 
   <section>
-  <div class="container">
+  <div class="container" class="ajusteContainer">
     <table border="1">
       <thead>
         <tr>
