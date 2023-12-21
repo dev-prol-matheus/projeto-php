@@ -62,7 +62,9 @@
                                  }else{
                                     echo"<td> Kit entregue </td>";  
                                  }
-                                 echo "<td><a href='php/baixa.php?id=".$row['id']."'>Realiza Baixa<a></td>";
+                                 echo "<td>
+                                 <a href='php/baixa.php?id=".$row['id']."'>Realizar Baixa<a> 
+                                 <td>";
                             echo"</tr>";
                             
                         }
