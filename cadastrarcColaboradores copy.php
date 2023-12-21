@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <title>Minha Página</title>
   <link rel="stylesheet" href="css/estilo.css">
@@ -18,7 +17,7 @@
 
   </header>
   <section>
-    <div class="container">
+    <div class="container2">
       <form action="php/cadastrar-colaboradores.php" method="post" class="form">
         <label for="nome">Nome:</label><br>
         <input type="text" id="nome" name="nome"><br><br>

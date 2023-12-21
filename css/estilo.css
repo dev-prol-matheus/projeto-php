@@ -46,6 +46,8 @@ body {
         background-color: #004A8D;
         color: #f7f5f0;
         border-top:4px solid #F7941D;
+        padding: 20px;
+
       }
     
       .container {
@@ -53,6 +55,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 0 500px 0 500px;
       }
       
       .form {
@@ -60,7 +63,7 @@ body {
         padding: 20px;
         border: 1px solid #5389bb;
         border-radius: 5px;
-        background-color: #f9f9f9;
+        background-color: #f9f9f9;        
       }
 
       .btmPadrao {
@@ -96,6 +99,34 @@ body {
           background-color: #f2f2f2; /* Cor de fundo para linhas pares */
       }
 
-  
-  
+      input[type="password"] {
+        width: calc(100% - 12px);
+        padding: 8px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      
+      /* Estilizando quando o campo está em foco */
+      input[type="password"]:focus {
+        outline: none;
+        border-color: #7c93cf; /* Cor da borda quando o campo está em foco */
+        box-shadow: 0 0 5px rgba(124, 147, 207, 0.5); /* Sombra quando em foco */
+      }
+
+      img {
+        display: flex;
+        align-items: center;
+        width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .ajusteContainer{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+      }
 

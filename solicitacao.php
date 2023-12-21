@@ -9,6 +9,9 @@
 <body>
 
     <header>
+    <div class: Logo-Projeto>
+            <img src="Logo_projetoPHP-12.png">
+     </div>
         <h1>Solicitação de kits</h1>
         <?php include "includes/menu.php"; ?>
     </header>
@@ -19,11 +22,21 @@
 
             <label for="nome">Colaborador:</label><br>
             <select name="select">
-            <option value="valor1">Matheus</option>
-            <option value="valor2" >Fulano</option>
-            <option value="valor3">Cicrano</option>
-            <option value="valor3">Beltrano</option>
-            <option value="valor3">Seu zé</option>
+             <?php   
+           
+            include "conexao/conexao.php";
+
+          try {
+              $stmt = $conn->query("SELECT * FROM colaboradores");
+              $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+                foreach ($results as $option) {
+                    echo "<option value='" . $option['id'] . "'>" . $option['nome'] . "</option>";
+                }
+                } catch(PDOException $e) {
+                    echo "Error: " . $e->getMessage();
+            }
+            ?> 
             </select>
                 <br>
                 <br>
@@ -31,19 +44,28 @@
             <label for="email">Kit:</label><br>
             <select name="select">
             <option value="valor1">Sala 1</option>
-            <option value="valor2">Sala 2</option>
-            <option value="valor3">Sala 3</option>
-            <option value="valor3">Sala 4</option>
-            <option value="valor3">Sala 5</option>
-            <option value="valor3">Sala 6</option>
+            <?php
+
+            include "conexao/conexao.php";
+
+            try {
+                $stmt = $conn->query("SELECT * FROM kits");
+                $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+                  foreach ($results as $option) {
+                    echo "<option value='" . $option['id'] . "'>" . $option['nome'] . "</option>";
+                }
+                } catch(PDOException $e) {
+                    echo "Error: " . $e->getMessage();
+            }
+            ?>
+
             </select>
             <br><br>
             <input class="btmPadrao" type="submit" value="Solicitar">
         </form>
         </div>
-    </section>
-    
-    <?php include "includes/footer.php" ?>
-    
+    </section>    
+    <?php include "includes/footer.php"; ?>     
 </body>
 </html>

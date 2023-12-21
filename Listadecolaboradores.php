@@ -8,16 +8,26 @@
 </head>
 <body>
 
-
+<?php
+  session_start();
+  if (!isset($_SESSION['usuario_login'])) {
+    header("Location: index.php");
+    exit();
+  }
+  ?>
 
   <header>
-    <h1>Meus Clientes</h1>
+  <div class: Logo-Projeto>
+            <img src="Logo_projetoPHP-12.png">
+     </div>
+    <h1>Meus Colaboradores</h1>
+
     <?php include "includes/menu.php"  ?>
 
   </header>
 
   <section>
-  <div class="container">
+  <div class="container" class="ajusteContainer">
     <table border="1">
       <thead>
         <tr>
@@ -57,7 +67,7 @@
     </table>
   </div>
   </section>
-
+  <?php include "includes/footer.php"; ?> 
   
   
 
