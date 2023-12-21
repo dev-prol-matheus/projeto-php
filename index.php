@@ -12,20 +12,18 @@
         <div class: Logo-Projeto>
             <img src="Logo_projetoPHP-12.png">
         </div>
-        <h1>Solicitação de kits</h1>
-       
+        <h1>Solicitação de kits</h1>       
     </header>
 
 
     <section>
         <div class="container">
-        <form id="LoginForm" class="form">
-            <input type="text" id="username" placeholder="Usuário" required><br><br>
-            <input type="password" id="password" placeholder="Senha" required><br><br>
-            <button type="submit">Entrar</button>
-        
+        <form action="php/login.php" method="post" id="LoginForm" class="form">
+            <input type="text" id="login" placeholder="login" required><br><br>
+            <input type="password" id="senha" placeholder="senha" required><br><br>
+            <button type="submit">Entrar</button>        
         </div>
-</section>
+    </section>
     <?php include "includes/footer.php"; ?> 
 </body>
 </html>
