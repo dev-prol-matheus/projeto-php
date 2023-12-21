@@ -1,5 +1,6 @@
 <?php
 
+
 $login = $_POST['login'];
 $senha = $_POST['senha'];
 
@@ -10,7 +11,6 @@ $stmt = $conn->query("SELECT * FROM usuario WHERE login='$login'");
 $usuario = $stmt->fetch(PDO::FETCH_ASSOC);
 
 $verificaSenha = password_verify($senha, $usuario['senha']);
-
 
 if ($verificaSenha){    
     session_start();
