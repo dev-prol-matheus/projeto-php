@@ -49,6 +49,14 @@
   .form input[type="submit"]:hover {
     background-color: #45a049;
   }
+
+  .form input[type="password"] {
+    width: calc(100% - 12px);
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
   
   /* Estilos da Tabela */
   table {

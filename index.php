@@ -1,21 +1,24 @@
 <!DOCTYPE html>
-<html>
-<head> 
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de Kits - Senac</title>
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/estilo-cadrastocolaboradores.css">
 </head>
 <body>
 
     <header>
+        <h1>Solicitação de kits</h1>       
+    </header>
+
+    <section>        
         <div class: Logo-Projeto>
             <img src="Logo_projetoPHP-12.png">
         </div>
         <h1>Solicitação de kits</h1>       
     </header>
-
-
     <section>
         <div class="container">
         <form action="php/login.php" method="post" id="LoginForm" class="form">
