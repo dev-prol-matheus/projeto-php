@@ -13,7 +13,7 @@
         <div class: Logo-Projeto>
             <img src="Logo_projetoPHP-12.png">
         </div>    
-        <h1>Solicitação de kits</h1>   
+        <h1>Sistema de Kits</h1>   
     </header>
 
     <section>

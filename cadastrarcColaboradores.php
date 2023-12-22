@@ -4,7 +4,8 @@
 <head>
   <title>Minha Página</title>
   <link rel="stylesheet" href="css/estilo.css">
-  <link rel="stylesheet" href="css/estilo-cadrastoKits.css">
+  <link rel="stylesheet" href="css/estilo-cadrastocolaboradores.css">
+  <script src="javascript/validacaoCpf.js"></script>
 </head>
 <body>
 
@@ -19,7 +20,7 @@
   </header>
   <section>
     <div class="container">
-      <form action="php/cadastrar-colaboradores.php" method="post" class="form">
+    <form action="php/cadastrar-colaboradores.php" method="post" class="form" onsubmit="return validarFormulario()">
         <label for="nome">Nome:</label><br>
         <input type="text" id="nome" name="nome"><br><br>
 
