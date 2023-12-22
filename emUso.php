@@ -64,7 +64,7 @@
                                  }
                                  echo "<td>
                                  <a href='php/baixa.php?id=".$row['id']."'>Realizar Baixa<a> 
-                                 <td>";
+                                 </td>";
                             echo"</tr>";
                             
                         }
