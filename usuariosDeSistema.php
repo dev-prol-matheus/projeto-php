@@ -1,12 +1,5 @@
 <!DOCTYPE html>
 <html>
-  
-<head>
-  <title>Minha Página</title>
-  <link rel="stylesheet" href="css/estilo.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-</head>
-<body>
 <?php
   session_start();
   if (!isset($_SESSION['usuario_login'])) {
@@ -14,6 +7,13 @@
     exit();
   }
   ?>
+<head>
+  <title>Minha Página</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+
   <header>
     <h1>Usuários de Sistema</h1>
     <?php include "includes/menu.php"  ?>

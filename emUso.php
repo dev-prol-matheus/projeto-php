@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<?php
+  session_start();
+  if (!isset($_SESSION['usuario_login'])) {
+    header("Location: index.php");
+    exit();
+  }
+  ?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kits em Uso</title>
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/estilo-cadrastocolaboradores.css">
+   
 </head>
 
 
@@ -21,6 +28,7 @@
 
     <div class= "container">
     <section>
+    <input type="text" placeholder="Search..." id="searchInput">
         <table border="1">
             <thead>
                 <tr>
@@ -70,7 +78,9 @@
                 ?>
             </tbody>
           </table>
+          
     </section>
     <?php include "includes/footer.php"; ?> 
+    <script src="javascript/barradebusca.js"></script>
 </body>
 </html>
