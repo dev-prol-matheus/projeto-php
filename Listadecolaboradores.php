@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
-
+<?php
+  session_start();
+  if (!isset($_SESSION['usuario_login'])) {
+    header("Location: index.php");
+    exit();
+  }
+  ?>
 <head>
   <title>Minha Página</title>
   <link rel="stylesheet" href="css/estilo.css">
