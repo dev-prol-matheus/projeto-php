@@ -13,6 +13,7 @@
     <title>Solicitação de kit -senac</title>
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/estilo-cadrastocolaboradores.css">
+   
 </head>
 <body>
 
@@ -26,7 +27,7 @@
 
     <section>
         <div class="container">
-            <form action="php/cadastro.php" method="post" class="form">
+            <form action="php/cadastro-sol-kit.php" method="post" class="form">
 
             <label for="nome">Colaborador:</label><br>
             <select name="select">
@@ -78,5 +79,6 @@
         </div>
     </section>    
     <?php include "includes/footer.php"; ?>     
+    
 </body>
 </html>

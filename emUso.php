@@ -71,7 +71,7 @@
                                     echo"<td> Kit entregue </td>";  
                                  }
                                  echo "<td>
-                                 <a href='php/baixa.php?id=".$row['id']."'>Realizar Baixa<a> 
+                                 <a href='php/baixaKits.php?id=".$row['id']."'>Realizar Baixa<a> 
                                  </td>";
                             echo"</tr>";
                             
@@ -84,5 +84,6 @@
     </section>
     <?php include "includes/footer.php"; ?> 
     <script src="javascript/barradebusca.js"></script>
+
 </body>
 </html>

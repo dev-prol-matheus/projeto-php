@@ -16,6 +16,9 @@
 <body>
 
   <header>
+    <div class="Logo-Projeto">
+        <img src="Logo_projetoPHP-12.png">
+     </div>
     <h1>Cadastrar Kits</h1>
     <?php include "includes/menu.php"  ?>
 

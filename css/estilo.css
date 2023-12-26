@@ -129,39 +129,41 @@ body {
 
       }
 
-      .mainmenubtn {
+      /* Estilo básico para o botão dropdown */
+      .dropbtn {
         background-color: #004A8D;
-        font-size: 16px;
         color: white;
+        padding-right: 30px;
+        font-size: 16px;
         border: none;
-        cursor:auto;
-        padding:20px;
-        margin-top:20px;
-    }
-    .mainmenubtn:hover {
-        background-color: #004A8D;
-        }
-    .dropdown {
+        cursor: pointer;
+      }
+
+      /* Estilo do dropdown */
+      .dropdown {
         position: relative;
         display: inline-block;
-    }
-    .dropdown-child {
+      }
+
+      /* Estilo dos links dentro do dropdown */
+      .dropdown-content {
         display: none;
-        background-color: #004A8D;
-        min-width: 200px;
-    }
-    .dropdown-child a {
-        color: white;
-        padding: 15px;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
         text-decoration: none;
         display: block;
-    }
-    .dropdown:hover .dropdown-child {
-        display: block;
-    }
+      }
 
-    .icone{
+      .dropdown-content a:hover {background-color: #f1f1f1;}
 
-      font-size: 10px;
-    }
+      .show {display: block;}
+
 
