@@ -16,7 +16,7 @@ try {
     
     $stmt->execute();
 
-    header("Location: ../index.php");
+    header("Location: ../Listadecolaboradores.php");
     exit();
 
 } catch(PDOException $e) {
