@@ -74,7 +74,6 @@
                                  echo "<td>
                                  <a href='php/baixaKits.php?id=".$row['id']."'>Realizar Baixa<span class='material-symbols-outlined'>done</span></a></td>";
                             echo"</tr>";
-                            
                         }
                     }catch(PDOException $e){}
                 ?>
