@@ -77,8 +77,6 @@ body {
         background-color:#013361 !important;
         transform: scale(1.03) !important;
       }
-  
-      
 
 
        /* Estilos para as células */
@@ -165,5 +163,3 @@ body {
       .dropdown-content a:hover {background-color: #f1f1f1;}
 
       .show {display: block;}
-
-

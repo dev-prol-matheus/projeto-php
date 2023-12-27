@@ -13,6 +13,7 @@
     <title>Kits em Uso</title>
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/estilo-cadrastocolaboradores.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
    
 </head>
 
@@ -71,8 +72,7 @@
                                     echo"<td> Kit entregue </td>";  
                                  }
                                  echo "<td>
-                                 <a href='php/baixaKits.php?id=".$row['id']."'>Realizar Baixa<a> 
-                                 </td>";
+                                 <a href='php/baixaKits.php?id=".$row['id']."'>Realizar Baixa<span class='material-symbols-outlined'>done</span></a></td>";
                             echo"</tr>";
                             
                         }
