@@ -14,10 +14,13 @@
         <link rel="stylesheet" href="css/estilo.css">
         <link rel="stylesheet" href="css/estilo-cadrastocolaboradores.css">
 
+              
+
         <style>
             #searchInput{
                 margin-top: 10px;
-                margin-left: 540px;
+                margin-left: 600px;
+                
             }
 
             .emUsoDiv{
@@ -28,12 +31,13 @@
 
             .emUsoTable {
                 border-collapse: collapse;
-                width: 100%;
+                width: 90%;
             }
 
 
             th, td {
-                padding: 10px;
+                padding: 15px;
+                align-items: center;
             }
         </style>
     </head>
@@ -48,7 +52,7 @@
             <?php include "includes/menu.php"?>
         </header>
 
-        <input type="text" placeholder="Search..." id="searchInput">
+         <input class="form" type="text" placeholder="Pesquisar..." id="searchInput">
 
         <div class= "emUsoDiv">
 
