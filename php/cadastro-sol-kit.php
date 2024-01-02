@@ -1,10 +1,11 @@
 <?php
+include "../conexao/conexao.php";
 try {   
     date_default_timezone_set("America/Recife");
   
     $colaborador = $_POST['colaborador'];
     $kit = $_POST['kit'];
-    $dataSolicitacao = date();
+    $dataSolicitacao = date("D-m-y H:i:s");
     $baixa = 0;
     $dataEntrega = "";
 
@@ -24,7 +25,7 @@ try {
 
     $stmt->execute();
 
-    header("Location: ../solicitacao.php");
+    header("Location: ../emUso.php");
     exit();
 
 } catch(PDOException $e) {

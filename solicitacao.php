@@ -30,7 +30,7 @@
             <form action="php/cadastro-sol-kit.php" method="post" class="form">
 
             <label for="nome">Colaborador:</label><br>
-            <select name="select">
+            <select name="colaborador">
              <?php   
            
             include "conexao/conexao.php";
@@ -50,8 +50,8 @@
                 <br>
                 <br>
 
-                <label for="email">Kit:</label><br>
-                <select name="select">
+                <label for="kit">Kit:</label><br>
+                <select name="kit">
                     <?php
                             include "conexao/conexao.php";
 
