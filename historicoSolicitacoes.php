@@ -38,7 +38,7 @@
                         <?php 
                             include "conexao/conexao.php";
                             try{
-                                $stmt = $conn -> query("SELECT * FROM solicitacoes_kits");
+                                $stmt = $conn -> query("SELECT * FROM solicitacoes_kits WHERE BAIXA = 1");
                                 $result = $stmt -> fetchAll(PDO::FETCH_ASSOC);
                                 
                                 foreach($result as $row){

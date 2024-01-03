@@ -6,6 +6,7 @@ $id = $_GET['id'];
 
 try {
     $stmt = $conn->prepare("UPDATE solicitacoes_kits SET baixa=1 WHERE id=:id");
+
     $stmt->bindParam(':id', $id);    
     $stmt->execute();
     header("Location: ../emUso.php");
