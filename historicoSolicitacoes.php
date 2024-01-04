@@ -7,6 +7,30 @@
         <title>Kits em Uso</title>
         <link rel="stylesheet" href="css/estilo.css">
         <link rel="stylesheet" href="css/estilo-kits-em-uso.css">
+        <style>
+            #searchInput{
+                margin-top: 10px;
+                margin-left: 600px;
+                
+            }
+
+            .emUsoDiv{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .emUsoTable {
+                border-collapse: collapse;
+                width: 90%;
+            }
+
+
+            th, td {
+                padding: 15px;
+                align-items: center;
+            }
+        </style>
     </head>
 
 
@@ -19,9 +43,9 @@
             <?php include "includes/menu.php"?>
         </header>
 
-        <div class = "kits-em-uso">
+        <div class="emUsoDiv">
             <section>
-                <table border="1">
+                <table border="1" class ="emUsoTable">
                     <thead>
                         <tr>
                             <th>Kit</th>
@@ -38,7 +62,7 @@
                         <?php 
                             include "conexao/conexao.php";
                             try{
-                                $stmt = $conn -> query("SELECT * FROM solicitacoes_kits WHERE BAIXA = 1");
+                                $stmt = $conn -> query("SELECT * FROM solicitacoes_kits WHERE baixa = 1");
                                 $result = $stmt -> fetchAll(PDO::FETCH_ASSOC);
                                 
                                 foreach($result as $row){
@@ -69,14 +93,11 @@
                                     
                                 }
                             }catch(PDOException $e){}
-
-
-
-
                         ?>
                     </tbody>
                 </table>
             </section>
+        
         <?php include "includes/footer.php"; ?> 
     </body>
 </html>

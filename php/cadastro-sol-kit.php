@@ -5,7 +5,7 @@ try {
   
     $colaborador = $_POST['colaborador'];
     $kit = $_POST['kit'];
-    $dataSolicitacao = date("D-m-y H:i:s");
+    $dataSolicitacao = date("Y-m-d H:i:s");
     $baixa = 0;
     $dataEntrega = "";
 

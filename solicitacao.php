@@ -56,15 +56,11 @@
                             include "conexao/conexao.php";
 
                             try {
-                                $stmt = $conn->query("SELECT * FROM solicitacoes_kits WHERE baixa = 1");
+                                $stmt = $conn->query("SELECT * FROM kits");
                                 $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
                             
                                 foreach ($results as $option) {
-                                    $idKit = $option['id_kit'];
-                                    $stmtKit = $conn->query("SELECT * FROM kits WHERE id = $idKit");
-                                    $kit = $stmtKit->fetch(PDO::FETCH_ASSOC);
-                            
-                                    echo "<option value='" . $option['id'] . "'>" . $kit['descricao'] ."</option>";
+                                    echo "<option value='" .$option['id'] . "'>" . $option['descricao'] ."</option>";                                    
                                 }
                             } catch(PDOException $e) {
                                 echo "Error: " . $e->getMessage();
