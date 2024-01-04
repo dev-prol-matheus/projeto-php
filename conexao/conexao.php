@@ -1,6 +1,6 @@
 <?php
 
-$servername = "108.181.92.73";
+$servername = "200.9.22.2";
 $username = "admin-kits"; //teste01
 $password = "Senha!@#33"; //senha123
 $dbname = "projetokits";
