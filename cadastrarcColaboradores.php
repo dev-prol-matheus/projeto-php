@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html>
 <?php
   session_start();
   if (!isset($_SESSION['usuario_login'])) {
@@ -7,9 +5,13 @@
     exit();
   }
   ?>
+<!DOCTYPE html>
+<html>
+
 <head>
   <title>Minha Página</title>
   <link rel="stylesheet" href="css/estilo.css">
+  <script src="https://kit.fontawesome.com/bc9b62148c.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/estilo-cadrastocolaboradores.css">
   <script src="javascript/validacaoCpf.js"></script>
 </head>

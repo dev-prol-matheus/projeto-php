@@ -1,3 +1,10 @@
+<?php
+  session_start();
+  if (!isset($_SESSION['usuario_login'])) {
+    header("Location: index.php");
+    exit();
+  }
+  ?>
 <!DOCTYPE html>
 <html lang="pt">
 
@@ -5,6 +12,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Kits em Uso</title>
+        <script src="https://kit.fontawesome.com/bc9b62148c.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/estilo.css">
         <link rel="stylesheet" href="css/estilo-kits-em-uso.css">
         <style>
@@ -40,8 +48,11 @@
         <div class: Logo-Projeto>
                 <img src="Logo_projetoPHP-12.png">
         </div>
+        <h1>Cadastrar Kits</h1>
             <?php include "includes/menu.php"?>
         </header>
+
+        <input class="form" type="text" placeholder="Pesquisar..." id="searchInput">
 
         <div class="emUsoDiv">
             <section>
@@ -99,5 +110,6 @@
             </section>
         
         <?php include "includes/footer.php"; ?> 
+        <script src="javascript/barradebusca.js"></script>
     </body>
 </html>

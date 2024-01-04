@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <?php
   session_start();
   if (!isset($_SESSION['usuario_login'])) {
@@ -8,9 +5,12 @@
     exit();
   }
   ?>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Solicitação de kit -senac</title>
+    <script src="https://kit.fontawesome.com/bc9b62148c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/estilo-cadrastocolaboradores.css">
    

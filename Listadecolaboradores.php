@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html>
 <?php
   session_start();
   if (!isset($_SESSION['usuario_login'])) {
@@ -7,6 +5,9 @@
     exit();
   }
   ?>
+<!DOCTYPE html>
+<html>
+
 <head>
   <title>Minha Página</title>
   <link rel="stylesheet" href="css/estilo.css">

@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html>
 <?php
   session_start();
   if (!isset($_SESSION['usuario_login'])) {
@@ -7,9 +5,12 @@
     exit();
   }
   ?>
+<!DOCTYPE html>
+<html>
 <head>
   <title>Minha Página</title>
   <link rel="stylesheet" href="css/estilo.css">
+  <script src="https://kit.fontawesome.com/bc9b62148c.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>

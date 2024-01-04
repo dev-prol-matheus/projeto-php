@@ -15,7 +15,7 @@ $verificaSenha = password_verify($senha, $usuario['senha']);
 if ($verificaSenha){    
     session_start();
     $_SESSION['usuario_login'] = $login; 
-    header('location: ../cadastrarUsuarios.php');
+    header('location: ../emUso.php');
 }else{
     echo "<script>
     alert('Senha incorreta. Por favor, tente novamente.');
