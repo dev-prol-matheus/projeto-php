@@ -62,12 +62,12 @@
             <table border="1" class ="emUsoTable">
                 <thead>
                     <tr>
-                        <th>Kit</th>
-                        <th>Descrição</th>
-                        <th>Responsável</th>
-                        <th>Retirada</th>
-                        <th>Status</th>
-                        <th>Ação</th>
+                        <th><i class="fa-solid fa-bag-shopping"></i> Kit</th>
+                        <th><i class="fa-regular fa-file-lines"></i> Descrição</th>
+                        <th><i class="fa-solid fa-user"></i> Responsável</th>
+                        <th><i class="fa-solid fa-calendar-days"></i> Data/Hora da Retirada</th>
+                        <th><i class="fa-solid fa-circle-info"></i> Status</th>
+                        <th><i class="fa-solid fa-gear"></i> Ação</th>
                     </tr>
                 </thead>
                 

@@ -11,6 +11,7 @@
 <head>
   <title>Minha Página</title>
   <link rel="stylesheet" href="css/estilo.css">
+  <script src="https://kit.fontawesome.com/bc9b62148c.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
@@ -54,7 +55,7 @@
                 echo "<td>".$row['cargo']."</td>";
                 echo "<td> 
                 <a href='php/excluir.php?id=" . $row['id'] . 
-                "'<span class='material-symbols-outlined'>delete</span></a></td>";
+                "'<i class='fa-solid fa-trash-can'></i></a></td>";
                 echo "</tr>";
               }
           } catch(PDOException $e) {

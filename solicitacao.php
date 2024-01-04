@@ -70,7 +70,7 @@
                 </select>
             </select>
             <br><br>
-            <input class="btmPadrao" type="submit" value="Solicitar">
+            <button class="btmPadrao" type="submit"><i class="fa-solid fa-plus"></i> Solicitar</button> 
         </form>
         </div>
     </section>    
