@@ -92,8 +92,8 @@
                                         $colaborador = $stmt -> fetch(PDO::FETCH_ASSOC);
     
                                         echo"<td>" . $colaborador['cargo'] . ": " . $colaborador['nome'] . "</td>";
-                                        echo"<td>" . $row['data_hora_solicitacao'] . "</td>";
-                                        echo"<td>" . $row['data_hora_entrega'] . "</td>";
+                                        echo"<td>" . date("d-m-Y H:i:s", strtotime($row['data_hora_solicitacao'])) . "</td>";
+                                        echo"<td>" . date("d-m-Y H:i:s", strtotime($row['data_hora_entrega'])) . "</td>";
                                         if ($row['baixa'] == "0"){
                                             echo"<td> Kit em Uso </td>";
                                         }else{
